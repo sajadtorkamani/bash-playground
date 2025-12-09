@@ -4,7 +4,7 @@
 # $1: The first script argument
 # $2: The second script argument
 # $3: The third script argument
-# $4..9: The fourth to ninth arguments
+# $4..$9: The fourth to ninth arguments
 
 echo "You executed the script: $0"
 
