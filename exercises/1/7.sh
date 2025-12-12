@@ -1,6 +1,11 @@
 #!/bin/bash
 
-read -r "What's the name of the file or directory?" file_or_dir
+file_or_dir=$1
+
+if [ -z "$file_or_dir" ]; then
+  echo "You must provide a file or directory name"
+  exit 2
+fi
 
 if [ -d "$file_or_dir" ]
 then
