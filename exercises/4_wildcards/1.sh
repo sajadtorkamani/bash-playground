@@ -14,7 +14,6 @@ function ensure_directory_exists {
   fi
 }
 
-
 ensure_directory_exists $root_dir
 ensure_directory_exists $images_directory
 
