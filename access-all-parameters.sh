@@ -2,7 +2,7 @@
 
 echo "Executing script: $0"
 
-for ARG in "$@"
+for arg in "$@"
 do
-  echo "Arg: $ARG"
+  echo "Arg: $arg"
 done

@@ -2,4 +2,13 @@
 
 set -eou pipefail
 
-chmod +x ./**/*.sh
+root_dir=$(pwd)
+
+main_scripts="$root_dir/*.sh"
+exercise_scripts="$root_dir/exercises/**/*.sh"
+scripts="$main_scripts $exercise_scripts"
+
+for script in $scripts
+do
+  chmod +x "$script"
+done
