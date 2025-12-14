@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eou pipefail
+
+name=sajad
+
+set -x # This turns on the debug mode
+echo "$name"
+set +x set -x # This turns off the debug mode
+
+hostname
+
