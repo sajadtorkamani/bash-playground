@@ -1,8 +1,11 @@
 #!/bin/bash
 
+set -eou pipefail
 
-if [ -z "$1" ]; then
-  echo "You didn't provide any argument"
+value=""
+
+if [ -z "$value" ]; then
+  echo "value is empty"
 else
-  echo "You provided '$1' as an argument"
+  echo "value is not empty"
 fi
