@@ -23,3 +23,5 @@ function new_average() {
     echo "$result"
   fi
 }
+
+new_average "14, 30, 5, 7, 9, 11, 15"
