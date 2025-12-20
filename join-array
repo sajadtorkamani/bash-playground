@@ -13,5 +13,6 @@ IFS=","
 echo "${names[*]}"
 
 # Join the `names` array using two dashes (--) as the glue
+# Note that we have to use printf here because IFS can only be set to a single char
 joined=$(printf "%s--" "${names[@]}")
 echo "${joined:0:-2}"
