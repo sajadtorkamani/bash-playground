@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Declare array
+names=(bob jim alice mike sam)
+
+# Join the `names` array using a space ( ) as the glue
+echo "${names[*]}"
+
+# Join the `names` array using a comma (,) as the glue
+IFS=","
+echo "${names[*]}"
+
+# Join the `names` array using two dashes (--) as the glue
+joined=$(printf "%s--" "${names[@]}")
+echo "${joined:0:-2}"
