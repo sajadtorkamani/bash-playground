@@ -4,7 +4,7 @@ set -euox pipefail
 
 # Reverse the words in the given string
 function reverse_words() {
-  local str=$1
+  local str="$1"
   local words
   read -ra words <<< "$str"
   local num_words="${#words[@]}"
