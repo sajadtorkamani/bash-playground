@@ -1,18 +1,5 @@
 #!/usr/bin/env bash
 
-str="Hello, how are you doing today?"
+num=1
 
-read -ra words <<<"$str"
-
-for word in "${words[@]}"; do
-  echo "$word"
-done
-
-# Output
-# --------
-# Hello,
-# how
-# are
-# you
-# doing
-# today?
+echo "$num" % 2
