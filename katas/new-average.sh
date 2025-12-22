@@ -21,7 +21,8 @@ function new_average() {
     exit 1
   else
     echo "$result"
+    exit 0
   fi
 }
 
-new_average "14, 30, 5, 7, 9, 11, 15"
+new_average "14, 30, 5, 7, 9, 11, 15" "30"
