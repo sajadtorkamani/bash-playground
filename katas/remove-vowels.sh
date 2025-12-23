@@ -3,7 +3,7 @@
 set -euo pipefail
 
 function remove_vowels() {
-  str=$1
+  local str=$1
   echo "$str" | sed -E "s/[aeiou]//gi"
 }
 
